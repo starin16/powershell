@@ -1,17 +1,8 @@
 ﻿<#
-				"Satnaam WaheGuru Ji"
-		
-	Author  : Aman Dhally
-	Email	: amandhally@gmail.com
-	Date	: 21-August-2012
-	Time	: 15:35
+	Author  : Matthew Starin
+	Date	: 8-1-23
 	Script	: Software Inventory 
-	Purpose	: List of all software installed on a laptop.
-	website : www.amandhally.net
-	twitter : https://twitter.com/#!/AmanDhally 
-	
-				/^(o.o)^\  V.1
-
+	Purpose	: List of all software installed on a laptop.		
 #>
 
 #variables 
@@ -41,7 +32,7 @@
 	invoke-Expression "$filepath\$name.html" 
 ## END of the SCRIPT ## 
 
-################################# a m a n D | 
+
 
 
 
