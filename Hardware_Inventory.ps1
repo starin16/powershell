@@ -1,18 +1,7 @@
 ﻿<#
-			"SatNaam WaheGuru"
-
-Date: 03:03:2012, 18:20PM
-Author: Aman Dhally
-Email:  amandhally@gmail.com
-web:	www.amandhally.net/blog
-blog:	http://newdelhipowershellusergroup.blogspot.com/
-More Info : 
-
-Version : 1
-
-	/^(o.o)^\ 
-
-
+	Author  : Matthew Starin
+	Date	: 8-1-23
+ 	Puroose : List Hardware
 #>
 
 
