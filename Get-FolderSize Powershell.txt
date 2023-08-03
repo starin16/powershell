@@ -1,9 +1,6 @@
 ﻿<#
-# AUTHOR  : 	Victor Ashiedu
-# WEBSITE : 	iTechguides.com
-# BLOG    : 	iTechguides.com/blog
-# CREATED : 	19-12-2014 
-# UPDATED : 	18-02-2015 
+#Author  : Matthew Starin
+#Date	: 8-1-23
 # COMMENT : 	Get-FolderSize Function displays size of all folders in a 
 #           	specified path. This tool is usefull if you want to determine 
 #				large folders in a particular path. Multiple paths can be specified
