@@ -1,0 +1,15 @@
+----Configure User Rights...
+		SeImpersonatePrivilege must be assigned to administrators. This setting is adjusted.
+		SeImpersonatePrivilege must be assigned to SERVICE. This setting is adjusted.
+	Configure S-1-5-19.
+	Configure S-1-5-20.
+	Configure S-1-5-32-544.
+	Configure S-1-5-32-551.
+	Configure S-1-5-32-559.
+	Configure S-1-1-0.
+	Configure S-1-5-32-545.
+	Configure S-1-5-6.
+	Configure S-1-5-90-0.
+	Configure S-1-5-32-555.
+	Configure S-1-5-80-0.
+	Configure S-1-5-80-3139157870-2983391045-3678747466-658725712-1809340420.

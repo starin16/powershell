@@ -1,0 +1,38 @@
+The reboot command (I'm a Powershell guy, but this is cleaner.) is:
+
+SHUTDOWN /r /f /m \\ComputerName
+I prefer the second way, where you use your current credentials to create a scheduled task that runs with the system account on a remote machine.
+
+SCHTASKS /Create /TN "Reboot Server" /TR "shutdown.exe /r /f" /SC ONCE /ST 00:00 /SD "12/24/2012" /RU SYSTEM /S ComputerName
+
+read-host -assecurestring | convertfrom-securestring | out-file C:\securestring.txt
+$pass = cat C:\securestring.txt | convertto-securestring
+$mycred = new-object -typename System.Management.Automation.PSCredential -argumentlist "test",$pass
+$mycred.GetNetworkCredential().Password
+
+Use Import/Export-CLIXML.
+
+These are my favorite commands for the issue you're trying to resolve. And the simplest way to use them is.
+
+$passwordPath = './password.txt'
+if (-not (test-path $passwordPath)) {
+    $cred = Get-Credential -Username domain\username -message 'Please login.'
+    Export-Cli -InputObject $cred -Path $passwordPath
+}
+$cred = Import-CliXML -path $passwordPath
+
+So if the file doesn't locally exist it will prompt for the credentials and store them. This will take a [pscredential] object without issue and will hide the credentials as a secure string.
+
+Finally just use the credential like you normally do.
+
+Restart-Computer -ComputerName ... -Credentail $cred
+
+
+Get-ADDomain
+
+$Ipaddress = "10.20.40.15"
+
+$dnsaddress = "10.20.40.1"
+
+Import-Module ActiveDirectory
+Get-ADUser -Filter * -Properties * | export-csv c:\ADusers.csv

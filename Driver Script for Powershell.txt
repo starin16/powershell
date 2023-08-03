@@ -1,0 +1,3 @@
+Driver Script for Powershell
+
+export-windowsdriver -online -destination C:\Driver Backup
