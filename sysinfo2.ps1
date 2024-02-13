@@ -4,13 +4,7 @@ Generate a informative page about Laptop/desktop hardware and software informati
 
  
 
-http://newdelhipowershellusergroup.blogspot.com/2011/10/generate-system-information-reports.html
-
- 
-
-www.amandhally.net/blog
-
- 
+Author: Matthew Starin
 
 #>
 
