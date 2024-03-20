@@ -1,0 +1,12 @@
+    #Get Server Uptime
+    #Provide list of Servers in $ServerList
+         $servers = "Server-1 ","Server-2 ","Server-3" , "Server-4 "
+    #get date
+$currentdate = Get-Date
+
+
+foreach($server in $servers){
+$Bootuptime = (Get-CimInstance -ClassName Win32_OperatingSystem -ComputerName $server).LastBootUpTime
+   $uptime = $currentdate - $Bootuptime
+   Write-Output "$server Uptime : $($uptime.Days) Days, $($uptime.Hours) Hours, $($uptime.Minutes) Minutes"
+}
