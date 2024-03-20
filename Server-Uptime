@@ -1,0 +1,13 @@
+ -Credential (Get-Credential)
+ $ServerName = "Server"
+
+Invoke-Command -ComputerName $ServerName -ScriptBlock {
+    $lastBootUpTime = (Get-CimInstance -ClassName Win32_OperatingSystem).LastBootUpTime
+    $currentTime = Get-Date
+    $uptime = $currentTime - $lastBootUpTime
+    [PSCustomObject]@{
+        Server = $env:COMPUTERNAME
+        LastBootUpTime = $lastBootUpTime
+        Uptime = $uptime
+    }
+}
